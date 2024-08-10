@@ -1,0 +1,50 @@
+---
+title: Apply Command
+---
+
+import ApplyCommand from '../../../components/ApplyCommand.astro'
+import { Aside } from '@astrojs/starlight/components'
+
+The apply command is used to apply for the Beta or the Alpha program.
+
+<Aside type="caution" title="Note!">
+  Applying for any of the programs has to be done from the server you own, and will not guarantee the acceptance of your application.
+</Aside>
+
+## Usage
+
+### Beta (Slash Command)
+
+<ApplyCommand 
+    isSlashCommand={true} 
+    verified={false}
+    program="beta"
+/>
+
+
+### Alpha (Slash Command)
+
+<ApplyCommand 
+    isSlashCommand={true} 
+    verified={false}
+    program="alpha"
+/>
+
+
+### Beta (Legacy Command)
+
+<ApplyCommand 
+    isSlashCommand={false} 
+    verified={false}
+    program="beta"
+/>
+
+
+### Alpha (Legacy Command)
+
+<ApplyCommand 
+    isSlashCommand={false} 
+    verified={false}
+    program="alpha"
+/>
+

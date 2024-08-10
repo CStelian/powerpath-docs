@@ -1,0 +1,9 @@
+:root {
+    --d: #353965;
+    --mention-background: hsl(var(--brand-500-hsl) / 0.3);
+}
+
+.icon {
+    display: inline-block !important;
+    margin-bottom: -2px !important;
+}
