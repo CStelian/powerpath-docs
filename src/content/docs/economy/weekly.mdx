@@ -1,0 +1,43 @@
+---
+title: Weekly Claim Command
+---
+
+import WeeklyCommand from '../../../components/WeeklyCommand.astro'
+import { weeklyClaim } from '../../../data/data.ts'
+
+The weekly command is used to claim your weekly rewards.
+
+## Current Weekly Claim Values
+
+<table>
+    <thead>
+        <tr>
+            <th>Bronze</th>
+            <th>Silver</th>
+            <th>Gold</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{weeklyClaim.bronze}</td>
+            <td>{weeklyClaim.silver}</td>
+            <td>{weeklyClaim.gold}</td>
+        </tr>
+    </tbody>
+</table>
+
+## Usage
+
+### Slash Command
+
+<WeeklyCommand 
+    isSlashCommand={true} 
+    verified={false}
+/>
+
+### Legacy Command
+
+<WeeklyCommand 
+    isSlashCommand={false} 
+    verified={false}
+/>

@@ -1,0 +1,33 @@
+---
+title: Play Command
+---
+
+import { Image } from 'astro:assets'
+import PlayCommand from '../../../components/PlayCommand.astro'
+import { gameModes } from '../../../data/data.ts'
+import raid from '../../../assets/game-modes/raid.svg'
+import zombiesOutbreak from '../../../assets/game-modes/zombies-outbreak.svg'
+
+The play command is used to play a game mode.
+
+## Current Game Modes
+
+| Game Mode | Power Level |
+|-----------|-------------|
+| {gameModes[0].name} | {gameModes[0].powerLevel} |
+| {gameModes[1].name} | {gameModes[1].powerLevel} |
+## Usage
+
+### Slash Command
+
+<PlayCommand 
+    isSlashCommand={true} 
+    verified={false}
+/>
+
+### Legacy Command
+
+<PlayCommand 
+    isSlashCommand={false} 
+    verified={false}
+/>

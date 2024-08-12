@@ -1,0 +1,43 @@
+---
+title: Daily Claim Command
+---
+
+import DailyCommand from '../../../components/DailyCommand.astro'
+import { dailyClaim } from '../../../data/data.ts'
+
+The daily command is used to claim your daily rewards.
+
+## Current Daily Claim Values
+
+<table>
+    <thead>
+        <tr>
+            <th>Bronze</th>
+            <th>Silver</th>
+            <th>Gold</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{dailyClaim.bronze}</td>
+            <td>{dailyClaim.silver}</td>
+            <td>{dailyClaim.gold}</td>
+        </tr>
+    </tbody>
+</table>
+
+## Usage
+
+### Slash Command
+
+<DailyCommand 
+    isSlashCommand={true} 
+    verified={false}
+/>
+
+### Legacy Command
+
+<DailyCommand 
+    isSlashCommand={false} 
+    verified={false}
+/>
